@@ -17,7 +17,7 @@ function receivedFunction() {
       } else { 
       
        
-        alert(productLines[i] + " NOT FOUND");
+        alert(productLines[i] + " NOT FOUND")
        
 
       }
