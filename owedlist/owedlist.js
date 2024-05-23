@@ -1,7 +1,7 @@
-let showItems = []
-let quantityArray = []
-let foundValue = []
-
+let showItems = [];
+let quantityArray = [];
+let foundValue = [];
+let quantityLines = [];
 
 //pulls data from text boxes when received button is clicked
 function receivedFunction() {
@@ -9,13 +9,12 @@ function receivedFunction() {
     const inputQuantity = document.getElementById('quantity').value;
     const productLines = inputProduct.split('\n');
     const quantityLines = inputQuantity.split('\n');
-    const quantityArray = quantityLines.map(Number);
     
-    
-
-    
-    
-    
+    for(let i = 0; i < quantityLines.length; i++) {
+      let removedCommas = quantityLines[i].split(',').join('');
+      console.log(removedCommas)
+      quantityArray.push(removedCommas);
+    }
 
 
  for(let i = 0; i < productLines.length; i++){
