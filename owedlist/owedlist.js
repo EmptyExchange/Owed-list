@@ -9,7 +9,15 @@ function receivedFunction() {
     const inputQuantity = document.getElementById('quantity').value;
     const productLines = inputProduct.split('\n');
     const quantityLines = inputQuantity.split('\n');
-    let quantityArray = quantityLines.map(Number);
+    const quantityArray = quantityLines.map(Number);
+    
+    
+
+    
+    
+    
+
+
  for(let i = 0; i < productLines.length; i++){
     //checks the product number entered is in the willNumLookup object
     if(wilNumLookup[productLines[i]]) {
@@ -104,6 +112,8 @@ function showStuff() {
             
         }, 500);
 }
+
+
 
 showStuff()
 
